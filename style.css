@@ -1,0 +1,36 @@
+#bg-img {
+    height: 100vh;
+    background-image: url(images/map.jpg);
+    background-size: cover;
+ 
+}
+
+#map-container {
+    text-align: absolute;
+
+
+    
+}
+#map { 
+    height: 95vh;
+    width: 70vw;
+    border-radius: 8px;
+    border: 2px;
+    border-color: turquoise;
+    border-style: solid;  
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#search-container {
+    position: absolute;
+    z-index: 314159;
+    min-width: 300px;
+    min-height: 60px;
+    top: 10px;
+    left: 60px;
+
+}
