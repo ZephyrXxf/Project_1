@@ -1,4 +1,4 @@
-{
+var ntuc = {
     "type": "FeatureCollection",
     "features": [
       {
