@@ -1,1 +1,1 @@
-# Project_1
+# Interactive Web Application Project
