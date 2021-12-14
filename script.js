@@ -298,7 +298,6 @@ var ustarLogo = new L.Icon({
   iconSize: [35, 35],
   iconAnchor: [22, 94],
   popupAnchor: [-3, -76],
-  
 });
 
 function ustarSg (feature, layer){
@@ -309,3 +308,4 @@ function ustarSg (feature, layer){
 L.geoJSON(ustar,{
   onEachFeature: ustarSg
 }).addTo(map);
+
