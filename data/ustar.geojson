@@ -1,0 +1,113 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "store": "U Stars Supermarket @ 261",
+                "address": "261 Punggol Way, #01-02, Singapore 820261",
+                "hours": "Open 24hours"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.89688700437546,
+                    1.4054156930843664
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "store": "U Stars Supermarket @ 291",
+                "address": "291 Yishun Street 22, 01 389/391, Singapore 760291",
+                "hours": "Open 24hours"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.83673310279846,
+                    1.435809187157659
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "store": "U Stars Supermarket @ 108 Hougang",
+                "address": "108 Hougang Ave 1, #01-1313, Singapore 530108",
+                "hours": "Open 24hours"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.88970673084258,
+                    1.353016492592029
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "store": "U Stars Supermarket @ 829",
+                "address": "BLK 829, Tampines Street 81, #01-272/274 276/278, Singapore 520829",
+                "hours": "Open 24hours"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.9348429441452,
+                    1.3492088147251144
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "store": "U Stars Supermarket @ 18",
+                "address": "18, #01-113 Toh Yi Dr, 590018",
+                "hours": "Closes 10PM"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.77330154180525,
+                    1.3399845563451882
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "store": "U Stars Supermarket",
+                "address": "810 Choa Chu Kang Ave 7, #01-01, Singapore 680810",
+                "hours": "Open 24hours"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.74649822711945,
+                    1.3742937932852155
+                ]
+            }
+        }
+    ]
+}
