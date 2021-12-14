@@ -1,3 +1,15 @@
+let singapore = [1.3598, 103.8107]; 
+let map = L.map('map').setView(singapore, 13);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token
+}).addTo(map);
+
 var ntuc = {
     "type": "FeatureCollection",
     "features": [
@@ -7,9 +19,9 @@ var ntuc = {
           "marker-color": "#f20202",
           "marker-size": "medium",
           "marker-symbol": "rocket",
-          "Store": "FairPrice Punggol Drive",
-          "Address": "612 Punggol Dr., 01-06 Damai Grove, Singapore 820612",
-          "Hours": "Open 24 hours"
+          "store": "FairPrice Punggol Drive",
+          "address": "612 Punggol Dr., 01-06 Damai Grove, Singapore 820612",
+          "hours": "Open 24 hours"
         },
         "geometry": {
           "type": "Point",
@@ -25,9 +37,9 @@ var ntuc = {
           "marker-color": "#f20202",
           "marker-size": "medium",
           "marker-symbol": "rocket",
-          "Store": "FairPrice Punggol Walk",
-          "Address": "308C Punggol Walk, #01-352, Singapore 823308",
-          "Hours": "Closes 11PM"
+          "store": "FairPrice Punggol Walk",
+          "address": "308C Punggol Walk, #01-352, Singapore 823308",
+          "hours": "Closes 11PM"
         },
         "geometry": {
           "type": "Point",
@@ -43,9 +55,9 @@ var ntuc = {
           "marker-color": "#f20202",
           "marker-size": "medium",
           "marker-symbol": "rocket",
-          "Store": "FairPrice Finest Waterway Point",
-          "Address": "83 Punggol Central, #B2-32, Singapore 828761",
-          "Hours": "Open 24 hours"
+          "store": "FairPrice Finest Waterway Point",
+          "address": "83 Punggol Central, #B2-32, Singapore 828761",
+          "hours": "Open 24 hours"
         },
         "geometry": {
           "type": "Point",
@@ -61,9 +73,9 @@ var ntuc = {
           "marker-color": "#f20202",
           "marker-size": "medium",
           "marker-symbol": "rocket",
-          "Store": "FairPrice",
-          "Address": "11 Rivervale Crescent, #03-01, Rivervale Mall, Singapore 545082",
-          "Hours": "Closes 10PM"
+          "store": "FairPrice",
+          "address": "11 Rivervale Crescent, #03-01, Rivervale Mall, Singapore 545082",
+          "hours": "Closes 10PM"
         },
         "geometry": {
           "type": "Point",
@@ -79,9 +91,9 @@ var ntuc = {
           "marker-color": "#f20202",
           "marker-size": "medium",
           "marker-symbol": "rocket",
-          "Store": "FairPrice Punggol Plaza",
-          "Address": "168 Punggol Field, 03-01/02 Punggol Plaza, Singapore 820168",
-          "Hours": "Closes 11PM"
+          "store": "FairPrice Punggol Plaza",
+          "address": "168 Punggol Field, 03-01/02 Punggol Plaza, Singapore 820168",
+          "hours": "Closes 11PM"
         },
         "geometry": {
           "type": "Point",
@@ -97,9 +109,9 @@ var ntuc = {
           "marker-color": "#f20202",
           "marker-size": "medium",
           "marker-symbol": "rocket",
-          "Store": "FairPrice Punggol Oasis Terraces",
-          "Address": "681 Punggol Dr., B1-01 Oasis Terraces, Singapore 820681",
-          "Hours": "Closes 11pm"
+          "store": "FairPrice Punggol Oasis Terraces",
+          "address": "681 Punggol Dr., B1-01 Oasis Terraces, Singapore 820681",
+          "hours": "Closes 11pm"
         },
         "geometry": {
           "type": "Point",
@@ -115,9 +127,9 @@ var ntuc = {
           "marker-color": "#f20202",
           "marker-size": "medium",
           "marker-symbol": "rocket",
-          "Store": "NTUC FairPrice",
-          "Address": "118 Rivervale Dr, 01-08 Rivervale Plaza, Singapore 540118",
-          "Hours": "Open 24 hours"
+          "store": "NTUC FairPrice",
+          "address": "118 Rivervale Dr, 01-08 Rivervale Plaza, Singapore 540118",
+          "hours": "Open 24 hours"
         },
         "geometry": {
           "type": "Point",
@@ -133,9 +145,9 @@ var ntuc = {
           "marker-color": "#f20202",
           "marker-size": "medium",
           "marker-symbol": "rocket",
-          "Store": "FairPrice",
-          "Address": "279 Sengkang E Ave, #01-06, Singapore 540279",
-          "Hours": "Open 24 hours"
+          "store": "FairPrice",
+          "address": "279 Sengkang E Ave, #01-06, Singapore 540279",
+          "hours": "Open 24 hours"
         },
         "geometry": {
           "type": "Point",
@@ -147,3 +159,20 @@ var ntuc = {
       }
     ]
   }
+
+var ntucLogo = new L.Icon({
+  iconUrl:"images/ntuclocator.png",
+  iconSize: [35, 35],
+  iconAnchor: [22, 94],
+  popupAnchor: [-3, -76],
+});
+
+function ntucSg (feature, layer){
+  layer.bindPopup(feature.properties.store);
+  layer.bindPopup(feature.properties.store.location);
+  layer.setIcon(ntucLogo);
+};
+
+L.geoJSON(ntuc,{
+  onEachFeature: ntucSg
+}).addTo(map);
