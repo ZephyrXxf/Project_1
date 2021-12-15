@@ -1,0 +1,67 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [ {
+    "geometry" : {
+      "coordinates" : [ 103.8724038, 1.3920970 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=18198267373160459005",
+      "Location" : {
+        "Address" : "447A Jln Kayu, #01-01/02 Fernvale Lodge, Singapore 791447",
+        "Business Name" : "FairPrice Jalan Kayu",
+        "Country Code" : "SG",
+        "Geo Coordinates" : {
+          "Latitude" : "1.3920970",
+          "Longitude" : "103.8724038"
+        }
+      },
+      "Published" : "2021-12-15T12:25:38Z",
+      "Title" : "FairPrice Jalan Kayu",
+      "Updated" : "2021-12-15T12:25:38Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 103.9035866, 1.3771313 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=3861079205527905211",
+      "Location" : {
+        "Address" : "476 Upper Serangoon View, #02-18 Hougang Capeview, Singapore 530476",
+        "Business Name" : "FairPrice Upper Serangoon View",
+        "Country Code" : "SG",
+        "Geo Coordinates" : {
+          "Latitude" : "1.3771313",
+          "Longitude" : "103.9035866"
+        }
+      },
+      "Published" : "2021-12-15T12:25:33Z",
+      "Title" : "FairPrice Upper Serangoon View",
+      "Updated" : "2021-12-15T12:25:33Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 103.9025132, 1.3855331 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=11065752498921825306",
+      "Location" : {
+        "Address" : "118 Rivervale Dr, 01-08 Rivervale Plaza, Singapore 540118",
+        "Business Name" : "NTUC FairPrice",
+        "Country Code" : "SG",
+        "Geo Coordinates" : {
+          "Latitude" : "1.3855331",
+          "Longitude" : "103.9025132"
+        }
+      },
+      "Published" : "2021-12-15T12:25:21Z",
+      "Title" : "NTUC FairPrice",
+      "Updated" : "2021-12-15T12:25:21Z"
+    },
+    "type" : "Feature"
+  } ]
+}

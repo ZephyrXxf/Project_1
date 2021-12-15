@@ -176,7 +176,7 @@ function ntucSg (feature, layer){
 
 L.geoJSON(ntuc,{
   onEachFeature: ntucSg
-}).addTo(map);
+}).addTo(map);o
 
 var ustar = 
 {
